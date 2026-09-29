@@ -1,0 +1,62 @@
+body {
+    font-family: system-ui, sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+    margin: 0;
+    padding: 2rem 5%;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+/* Button Styling */
+.filter-buttons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+button {
+    background: transparent;
+    color: #cbd5e1;
+    border: 1px solid #cbd5e1;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover, button.active {
+    background: #22d3ee;
+    color: #0f172a;
+    border-color: #22d3ee;
+}
+
+/* Grid Styling */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #1e293b;
+    padding: 2rem;
+    border-radius: 10px;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* JavaScript will apply this class to hide items */
+.card.hidden {
+    opacity: 0;
+    transform: scale(0.8);
+    pointer-events: none;
+    position: absolute; /* Removes it from the grid flow */
+    visibility: hidden;
+}
