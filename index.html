@@ -1,1 +1,183 @@
-<h1>My Personal Website is Live</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatikrushna Mishra | Science & Art</title>
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #cbd5e1;
+            --accent-cyan: #22d3ee;
+            --accent-purple: #c084fc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 5%;
+            background: rgba(15, 23, 42, 0.9);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            background: linear-gradient(to right, var(--accent-cyan), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-links a {
+            color: var(--text-main);
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-cyan);
+        }
+
+        /* Hero Section */
+        header {
+            padding: 6rem 5%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            max-width: 700px;
+        }
+
+        /* Interactive Grid Layout */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem 5% 5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            text-decoration: none;
+            color: var(--text-main);
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-purple);
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(to right, var(--accent-cyan), var(--accent-purple));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .card:hover::before {
+            opacity: 1;
+        }
+
+        .card h2 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">GM.</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="research.html">Research</a>
+            <a href="art.html">Art & Photo</a>
+            <a href="scicomm.html">SciComm</a>
+            <a href="blog.html">Blog</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Exploring life's complexity, from bench to canvas.</h1>
+        <p class="subtitle">Hi, I'm Gatikrushna Mishra. I am an evolutionary biologist studying microbial social dynamics and multicellularity at Osnabrück University. When I'm not running simulations or experimental selection regimes, you'll find me sketching with gouache and soft pastels, or writing about science.</p>
+    </header>
+
+    <div class="grid-container">
+        <!-- Research Card -->
+        <a href="research.html" class="card">
+            <h2>Research & Modeling</h2>
+            <p>Exploring phenotypic plasticity, the evolution of multicellularity in Staphylococcus aureus, and agent-based models for spatial interactions.</p>
+        </a>
+
+        <!-- Experience Card -->
+        <a href="experience.html" class="card">
+            <h2>Academic Journey</h2>
+            <p>From my BS-MS at IISER TVM to my current doctoral research in Germany. View my CV, coursework, and computational workflows in R and FIJI.</p>
+        </a>
+
+        <!-- Art & Photography Card -->
+        <a href="art.html" class="card">
+            <h2>Visual Arts & Photography</h2>
+            <p>A gallery of my creative work, featuring soft oil pastels, watercolor sketches, and photographic explorations of the world around me.</p>
+        </a>
+
+        <!-- SciComm & Blog Card -->
+        <a href="scicomm.html" class="card">
+            <h2>SciComm & Blog</h2>
+            <p>Writing about evolutionary transitions, theoretical biology, and navigating life as a researcher (along with the occasional synthwave track or chicken pulao recipe).</p>
+        </a>
+    </div>
+
+</body>
+</html>
