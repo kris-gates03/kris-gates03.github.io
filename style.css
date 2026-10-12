@@ -31,7 +31,7 @@ button {
 }
 
 button:hover, button.active {
-    background: #052d23;
+    background: #e6ff55;
     color: #e6ff55;
     border-color: #ccff00;
 }
