@@ -1,17 +1,17 @@
 [
     {
-        "title": "Experimental Evolution",
-        "category": "lab",
-        "description": "50-day selection regimes analyzing resilience in macroscopic microbial structures."
+        "title": "About Me",
+        "category": "Home",
+        "description": ""
     },
     {
-        "title": "Agent-Based Models",
-        "category": "theory",
-        "description": "Simulating critical radius constraints in cellular clusters."
+        "title": "What interests me?",
+        "category": "Home",
+        "description": ""
     },
     {
-        "title": "Group Theory & The Rubik's Cube",
-        "category": "math",
-        "description": "Applying abstract algebra to analyze move sequences and group structure."
+        "title": "Creation and Communication",
+        "category": "Home",
+        "description": ""
     }
 ]

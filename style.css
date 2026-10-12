@@ -1,7 +1,7 @@
 body {
     font-family: system-ui, sans-serif;
-    background-color: #0f172a;
-    color: #f8fafc;
+    background-color: #ccff00;
+    color: #052d23;
     margin: 0;
     padding: 2rem 5%;
 }
@@ -31,8 +31,8 @@ button {
 }
 
 button:hover, button.active {
-    background: #22d3ee;
-    color: #0f172a;
+    background: #052d23;
+    color: #e6ff55;
     border-color: #22d3ee;
 }
 
