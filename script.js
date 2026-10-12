@@ -32,7 +32,7 @@ buttons.forEach(button => {
     });
 });
 
-// 1. Point to the container where the HTML will go
+/*// 1. Point to the container where the HTML will go
 const container = document.getElementById('project-container');
 
 // 2. Fetch the data from the JSON file (this happens in the background)
@@ -59,4 +59,4 @@ fetch('data.json')
         });
         
     })
-    .catch(error => console.error('Error loading the projects:', error));
+    .catch(error => console.error('Error loading the projects:', error));*/

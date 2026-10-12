@@ -22,8 +22,8 @@ header {
 
 button {
     background: transparent;
-    color: #cbd5e1;
-    border: 1px solid #cbd5e1;
+    color: #052d23;
+    border: 1px solid #052d23;
     padding: 0.5rem 1.5rem;
     border-radius: 20px;
     cursor: pointer;
@@ -33,7 +33,7 @@ button {
 button:hover, button.active {
     background: #052d23;
     color: #e6ff55;
-    border-color: #22d3ee;
+    border-color: #ccff00;
 }
 
 /* Grid Styling */
@@ -46,7 +46,7 @@ button:hover, button.active {
 }
 
 .card {
-    background-color: #1e293b;
+    background-color: #052d23;
     padding: 2rem;
     border-radius: 10px;
     transition: transform 0.4s ease, opacity 0.4s ease;
