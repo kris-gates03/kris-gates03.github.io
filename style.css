@@ -1,7 +1,9 @@
 body {
     font-family: system-ui, Arial, Helvetica, sans-serif;
-    background-color: #ccff00;
-    color: #052d23;
+    background-color: #f4f1e8;
+    color: #18352c;
+    font-size: 18px;
+    line-height: 1.6;
     margin: 0;
     padding: 2rem 5%;
 }
@@ -9,6 +11,16 @@ body {
 header {
     text-align: center;
     margin-bottom: 3rem;
+}
+
+header h1 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    color: #163a2e;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #455b50;
 }
 
 /* Button Styling */
@@ -22,20 +34,22 @@ header {
 
 button {
     background: transparent;
-    color: #052d23;
-    border: 1px solid #052d23;
-    padding: 0.5rem 1.5rem;
+    color: #18352c;
+    border: 1px solid #18352c;
+    padding: 0.75rem 1.5rem;
     border-radius: 20px;
+    font: inherit;
+    font-size: 1.1rem;
+    font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 button:hover, button.active {
-    background: #052d23;
-    color: #ccff00;
-    border-color: #052d23;
+    background: #18352c;
+    color: #f4f1e8;
+    border-color: #18352c;
 }
-
 /* Grid Styling */
 .grid-container {
     display: grid;
@@ -46,8 +60,8 @@ button:hover, button.active {
 }
 
 .card {
-    background-color: #052d23;
-    color: #ccff00;
+    background-color: #031812;
+    color: #f5ffd6;
     padding: 2rem;
     border-radius: 10px;
     transition: transform 0.4s ease, opacity 0.4s ease;
