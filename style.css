@@ -32,7 +32,7 @@ button {
 
 button:hover, button.active {
     background: #ccff00;
-    color: #ccff00;
+    color: #052d23;
     border-color: #052d23;
 }
 
