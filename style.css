@@ -23,9 +23,9 @@ header {
 button {
     background: transparent;
     color: #052d23;
-    border: 1px solid #052d23;
+    border: 10px solid #052d23;
     padding: 0.5rem 1.5rem;
-    border-radius: 1000px;
+    border-radius: 40px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
