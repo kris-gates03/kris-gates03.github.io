@@ -1,6 +1,6 @@
 body {
     font-family: system-ui, Arial, Helvetica, sans-serif;
-    background-color: #052d23;
+    background-color: #ccff00;
     color: #052d23;
     margin: 0;
     padding: 2rem 5%;
@@ -33,7 +33,7 @@ button {
 button:hover, button.active {
     background: #052d23;
     color: #052d23;
-    border-color: #ccff00;
+    border-color: #052d23;
 }
 
 /* Grid Styling */
