@@ -1,13 +1,36 @@
 body {
     font-family: system-ui, Arial, Helvetica, sans-serif;
     background-color: #f4f1e8;
+    background-image:
+        radial-gradient(ellipse, rgba(170, 215, 151, 0.55), transparent 70%),
+        radial-gradient(ellipse, rgba(244, 201, 145, 0.35), transparent 70%),
+        radial-gradient(ellipse, rgba(161, 205, 196, 0.4), transparent 70%),
+        repeating-linear-gradient(
+            135deg,
+            rgba(24, 53, 44, 0.025) 0 1px,
+            transparent 1px 32px
+        );
+    background-size: 180% 180%, 180% 180%, 180% 180%, 32px 32px;
+    background-position: 0% 0%, 100% 20%, 50% 100%, 0 0;
+    animation: backgroundDrift 24s ease-in-out infinite alternate;
     color: #18352c;
     font-size: 18px;
     line-height: 1.6;
     margin: 0;
-    padding: 2rem 1rem;;
+    padding: 2rem 1rem;
 }
 
+@keyframes backgroundDrift {
+    to {
+        background-position: 100% 100%, 0% 80%, 100% 0%, 0 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body {
+        animation: none;
+    }
+}
 header {
     text-align: center;
     margin-bottom: 3rem;
