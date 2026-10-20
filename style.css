@@ -47,6 +47,7 @@ button:hover, button.active {
 
 .card {
     background-color: #052d23;
+    color: #ccff00;
     padding: 2rem;
     border-radius: 10px;
     transition: transform 0.4s ease, opacity 0.4s ease;
